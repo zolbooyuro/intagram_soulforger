@@ -75,7 +75,7 @@
         height: 85vh !important;
 
         .image {
-            height: 87vh !important;
+            height: 83vh !important;
         }
     }
     .exit_button {
@@ -83,6 +83,13 @@
     }
     .modal {
         width: 80% !important;
+    }
+    .paused {
+        background-color: rgba(255,255,255,.2);
+        position: absolute;
+        top: 25px;
+        left: 150px;
+        height: 50px;
     }
 }
 
@@ -97,6 +104,13 @@
     .image {
         position: absolute;
     }
+
+    .paused {
+        background-color: rgba(255,255,255,.2);
+        position: absolute;
+        top: 25px;
+        left: 260px;
+    }
 }
 
 @media screen and (min-width: 1900px) {
@@ -108,6 +122,12 @@
     }
     .button_img {
         margin-bottom: 91vh;
+    }
+    .paused {
+        background-color: rgba(255,255,255,.2);
+        position: absolute;
+        top: 25px;
+        left: 200px;
     }
 }
 
@@ -190,13 +210,6 @@
         box-shadow: none;
         border-bottom: 1px solid #dbdbdb;
     }
-}
-
-.paused {
-    background-color: rgba(255,255,255,.2);
-    position: absolute;
-    top: 25px;
-    left: 250px;
 }
 
 .button_img {
