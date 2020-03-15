@@ -1,0 +1,213 @@
+.com_pad {
+    padding: 10px;
+    border-bottom: 1px solid #bdbdbd;
+    height: 77px;
+}
+
+.brand-logo {
+    margin-top: 13px;
+    font-size: 0 !important;
+}
+.brand-logo .logo {
+    margin-top: -6px;
+    width: 28px;
+    height: 28px;
+}
+.brand-logo .seperator {
+    height: 28px;
+    width: 1px;
+    background-color: rgba(var(--i1d, 38, 38, 38), 1);
+    margin: 0 15px;
+}
+
+.infut_css {
+    border-radius: 4px !important;
+    border: 1px solid #bdbdbd !important;
+    margin-top: 16px !important;
+    height: 27px !important;
+}
+.infut_css :focus {
+    height: 25px !important;
+    background-color: #fafafa !important;
+    padding-left: 10px !important;
+}
+.infut_css .search {
+    margin-top: 3px;
+    margin-right: 10px;
+    line-height: normal !important;
+    color: #dbdbdb !important;
+    font-size: 18px !important;
+}
+.infut_css .search ::after {
+    color: #dbdbdb !important;
+    font-size: 18px !important;
+}
+.infut_css .close {
+    margin-top: 3px;
+    margin-right: 10px;
+    line-height: normal !important;
+    font-size: 18px !important;
+}
+.infut_css .close :focus {
+    color: #dbdbdb !important;
+    font-size: 18px !important;
+}
+
+.phone {
+    width: 100%;
+    height: 50px !important;
+    border-bottom: 1px solid #bdbdbd;
+    display: flex;
+}
+
+.main {
+    margin-top: 3vh;
+}
+
+.post {
+    height: auto;
+    margin-bottom: 20px;
+}
+.post nav {
+    background-color: #fafafa !important;
+}
+.post nav .nav-wrapper {
+    width: 100%;
+}
+.post nav .nav-wrapper .brand-logo {
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.post nav .nav-wrapper .brand-logo .profile {
+    height: 36px;
+    width: 36px;
+    margin-left: 20px;
+}
+.post nav .nav-wrapper .brand-logo h6 {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    width: 50px;
+    margin: 0 !important;
+}
+.post .card {
+    margin: 0;
+}
+.post .card nav {
+    height: 50px;
+}
+.post .card .image {
+    height: 30px;
+    width: 30px;
+}
+.post .card .card-action {
+    padding: 0;
+}
+.post .card .card-action form {
+    background-color: #fafafa;
+    border: none;
+    box-shadow: none;
+    height: 50px;
+}
+.post .card .input-field {
+    background-color: #fafafa;
+}
+.post .card .input-field :focus {
+    background-color: #fafafa !important;
+    padding-left: 10px !important;
+}
+.post .card .input-field input {
+    border-bottom: none;
+}
+.post .card .input-field label {
+    height: 25px;
+    top: -20px;
+    left: 10px;
+}
+.post .card .input-field .close {
+    color: black;
+    margin-top: 16px;
+    width: auto;
+    line-height: normal !important;
+    font-size: 18px !important;
+}
+
+.side .box .brand-logo {
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.side .box .profile {
+    height: 36px;
+    width: 36px;
+    margin-left: 20px;
+}
+.side .box h6 {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    width: 50px;
+    margin: 0 !important;
+}
+
+.input-field > label:not(.label-icon).active {
+    color: #fafafa !important;
+}
+
+/*# sourceMappingURL=App.css.map */
+
+
+.story_box>h6 {
+    margin-left: 16px;
+}
+
+.stories {
+    margin-left: 10px;
+}
+
+.post nav .nav-wrapper .brand-logo {
+    margin-top: 5px !important;
+}
+
+.side .box .brand-logo {
+    margin-top: 5px !important;
+}
+
+.soty_bar_mid {
+    position: relative;
+    height: 120px;
+}
+
+.story_box_mid {
+    border-radius: 4px;
+    border : 1px solid rgba(var(--b6a,219,219,219),1);
+    display: flex;
+    height: 100px;
+
+    .stories {
+        display: flex;
+        flex-direction: column;
+        width: 70px;
+        height: 70px !important;
+        margin-top: 5px;
+        img {
+            height: 50px;
+            width: 50px;
+            margin-bottom: 1px;
+        }
+        p {
+            margin: 0;
+            width: 70px;
+            font-size: 12px;
+        }
+    }
+}
+
+.com_pad {
+    padding: 6px !important;
+}
+
+@media screen and (min-width: 1900px) {
+    .story_box {
+        width: 14vw !important;
+    }
+}

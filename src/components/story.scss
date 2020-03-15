@@ -1,0 +1,230 @@
+.row {
+    margin-bottom: 0 !important;
+}
+
+.profile {
+    margin: 10px;
+    margin-left: 0px;
+    height: 36px;
+    // box-shadow: 2px black;
+}
+
+.collection {
+    margin-top: 0px;
+    border: 0 !important;
+    height: 64px;
+
+    .collection-item {
+        background-color: #262626 !important;
+        .text {
+            display: flex;
+            align-items: center;
+            .h5 {
+                color: white;
+            }
+            h6 {
+                width: fit-content;
+                font-weight: bold;
+                margin-top: 22px;
+                margin-left: 10px;
+                color: gray;
+            }
+        }
+        .secondary-content {
+            margin-top: 10px;
+        }
+    }
+}
+
+.story_back {
+    margin: 0 !important;
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    background: #262626;
+    display: flex;
+    justify-content: center;
+}
+
+.story {
+    margin-top: 0px !important;
+    width: 32vw;
+    height: 85vh !important;
+
+    .image {
+        height: 87vh !important;
+    }
+}
+
+.brand-logo {
+    width: 200px;
+    display: flex !important;
+    h5 {
+        margin: 0;
+        margin-left: 20px;
+        height: 100%;
+        color: white;
+        align-self: center;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .story {
+        margin-top: 10px;
+        width: 69vw;
+        height: 85vh !important;
+
+        .image {
+            height: 87vh !important;
+        }
+    }
+    .exit_button {
+        left: 84vw !important;
+    }
+    .modal {
+        width: 80% !important;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .button_img {
+        margin-top: 40vh !important; 
+    }
+    
+    .button_right_img {
+        margin-left: 48vh !important;
+    }
+    .image {
+        position: absolute;
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    .story {
+        width: 20vw !important;
+    }
+    img.image {
+        width: 20vw;
+    }
+    .button_img {
+        margin-bottom: 91vh;
+    }
+}
+
+
+.progress_container {
+    display: flex;
+}
+
+.progress {
+    height: 2px !important;
+    margin-left: 2px !important;
+    margin-right: 2px !important;
+    background-color: rgba(255,255,255,.35) !important;
+}
+
+.determinate {
+    height: 2px !important;
+    // width: 20%;
+    background-color: rgb(255, 255, 255) !important;
+}
+
+.exit_button {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: 10vh;
+    left: 66vw;
+    background-color: inherit !important;
+    box-shadow: none !important;
+}
+
+.fixed {
+    left: 63vw !important;
+    position: fixed;
+}
+.story_box {
+    height: auto;
+    width: 20vw;
+    border-radius: 4px;
+    border : 1px solid rgba(var(--b6a,219,219,219),1);
+    box-sizing: border-box;
+}
+
+.stories {
+    width: 200px;
+    position: relative;
+    display: flex;
+    height: 40px !important;
+    margin: 20px;
+    margin-left: 0;
+    justify-content: start;
+}
+  
+.stories p {
+    margin: 0;
+    align-self: center;
+    margin-left: 10px;
+}
+  
+.stories>.profile {
+    height: 36px;
+    margin-left: 10px;
+}
+
+.modal {
+    height: 86px;
+    width: 30%;
+    border-radius: 16px;
+}
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    padding: 0 !important;
+    .btn {
+        background-color: transparent;
+        height: 43px;
+        line-height: 43px;
+        color: black;
+        font-size: 13px;
+        box-shadow: none;
+        border-bottom: 1px solid #dbdbdb;
+    }
+}
+
+.paused {
+    background-color: rgba(255,255,255,.2);
+    position: absolute;
+    top: 25px;
+    left: 250px;
+}
+
+.button_img {
+    margin-left: -30px;
+    padding: 16px 8px;
+    box-shadow: none;
+    background-position: -150px -319px;
+    height: 30px;
+    width: 30px;
+    background-image: url('https://www.instagram.com/static/bundles/es6/sprite_core_b20f2a3cd7e4.png/b20f2a3cd7e4.png');
+}
+
+.button_right_img {
+    padding: 16px 8px;
+    position: absolute;
+    top: 51vh;
+    box-shadow: none;
+    background-position: -182px -319px;
+    height: 30px;
+    width: 30px;
+    background-image: url('https://www.instagram.com/static/bundles/es6/sprite_core_b20f2a3cd7e4.png/b20f2a3cd7e4.png');
+}
+
+.button {
+    position: relative;
+    top: 50%;
+}
+
+.button_right {
+    right: 0;
+}

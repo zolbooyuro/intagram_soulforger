@@ -1,0 +1,210 @@
+// @import './materialize';
+
+// MISSION - 01
+
+$text-color: white;
+$header-bg: teal;
+$header-height: 300px;
+
+$image: url('/Users/zolboo_soulforger/Desktop/Front-End/gala-scss/img/pattern.png');
+
+.com_pad {
+    padding: 10px;
+    border-bottom: 1px solid #bdbdbd;
+    height: 77px;
+}
+
+.brand-logo {
+    margin-top: 13px;
+    font-size: 0 !important;
+
+    .logo {
+        margin-top: -6px;
+        width: 28px;
+        height: 28px;
+    }
+
+    .seperator {
+        height: 28px;
+        width: 1px;
+        background-color: rgba(var(--i1d,38,38,38),1);
+        margin: 0 15px;
+    }
+}
+
+.infut_css {
+    border-radius: 4px !important;
+    border: 1px solid #bdbdbd !important;
+    margin-top: 16px !important;
+    height: 27px !important;
+
+    :focus {
+        height: 25px !important;
+        background-color: #fafafa !important;
+        padding-left: 10px !important;
+    }
+
+    
+
+    .search {
+        margin-top: 3px;
+        margin-right: 10px;
+        line-height: normal !important;
+        color: #dbdbdb !important;
+        font-size: 18px !important;
+
+        ::after {
+            color: #dbdbdb !important;
+            font-size: 18px !important;
+        }
+    }
+
+    .close {
+        margin-top: 3px;
+        margin-right: 10px;
+        line-height: normal !important;
+        font-size: 18px !important;
+
+        :focus {
+            color: #dbdbdb !important;
+            font-size: 18px !important;
+        }
+    }
+}
+
+.phone {
+    width: 100%;
+    height: 50px !important;
+    border-bottom: 1px solid #bdbdbd;
+    display: flex;
+}
+
+.main {
+    margin-top: 3vh;
+}
+
+.post {
+    height: auto;
+    margin-bottom: 20px;
+
+
+    nav {
+        background-color: #fafafa !important;
+
+        .nav-wrapper {
+            width: 100%;
+
+            .brand-logo {
+                width: 130px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .profile {
+                    height: 36px;
+                    width: 36px;
+                    margin-left: 20px;
+                }
+                h6 {
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    width: 50px;
+                    margin: 0 !important;
+                }
+            }
+        }
+    }
+
+    .card {
+        margin: 0;
+        
+        nav {
+            height: 50px;
+        }
+
+        .image {
+            height: 30px;
+            width: 30px;
+        }
+
+        .card-action {
+            padding: 0;
+
+            form {
+                background-color: #fafafa;
+                border: none;
+                box-shadow: none;
+                height: 50px;
+            }
+        }
+
+        .input-field {
+            background-color: #fafafa;
+
+            :focus {
+                background-color: #fafafa !important;
+                padding-left: 10px !important;
+            }
+
+            input {
+                border-bottom: none;
+
+            }
+
+            label {
+                height: 25px;
+                top: -20px;
+                left: 10px;
+            }
+
+            .close {
+                color: black;
+                margin-top: 16px;
+                width: auto;
+                line-height: normal !important;
+                font-size: 18px !important;
+            }
+        }
+    }
+}
+
+.side {
+
+    .box {
+        .brand-logo {
+            width: 130px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .profile {
+            height: 36px;
+            width: 36px;
+            margin-left: 20px;
+        }
+        h6 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            width: 50px;
+            margin: 0 !important;
+        }
+    }
+}
+
+
+
+.input-field>label:not(.label-icon).active {
+    // transform: none;
+    // transition: none;
+    color: #fafafa !important;
+    // top: -7px !important;
+}
+
+.indicator-item {
+    background-color: blue;
+    // bottom: -20px;
+    position: absolute;
+}
+
+.carousel .indicators .indicator-item.active {
+    background-color: #90caf9 !important;
+}
