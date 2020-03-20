@@ -1,0 +1,105 @@
+.logInBox {
+  position: relative;
+  border: 1px solid #dbdbdb;
+  height: 400px;
+  width: 350px;
+  top: 110px;
+}
+
+.insta_image {
+  position: relative;
+  background-position: -98px 0;
+  height: 51px;
+  width: 175px;
+  background-image: url("https://www.instagram.com/static/bundles/es6/sprite_core_576406ccc24b.png/576406ccc24b.png");
+  top: 30px;
+}
+
+.input {
+  position: relative;
+  top: 50px;
+  border: 1px solid #dbdbdb !important;
+  height: 36px !important;
+  border-radius: 2px;
+  input {
+    height: 36px !important;
+    font-size: 14px !important;
+    border-bottom: none !important;
+  }
+}
+input:hover {
+    border: none !important;
+}
+
+.password {
+  position: relative;
+  top: 27px;
+  border: 1px solid #dbdbdb !important;
+  height: 36px !important;
+  border-radius: 2px;
+  input {
+    height: 36px !important;
+    font-size: 14px !important;
+    border-bottom: none !important;
+  }
+}
+
+.LogInButton {
+  position: relative;
+  top: 30px !important;
+  height: 30px;
+  background-color: #3897f0;
+  font-size: 12px !important;
+  font-weight: bold;
+  color: white !important;
+  box-shadow: none !important;
+  border-radius: 4px;
+}
+
+.btn.disabled {
+  background-color: rgba(56, 151, 240, 0.3) !important;
+  color: white !important;
+}
+.btn:hover {
+  background-color: #3897f0 !important;
+}
+
+.Or {
+  position: relative;
+  top: 60px;
+  .box {
+    background-color: #dbdbdb;
+    height: 1px;
+  }
+  h6 {
+    position: relative;
+    color: grey;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0;
+    top: -5px;
+  }
+}
+
+.bottomBox {
+  position: relative;
+  border: 1px solid #dbdbdb;
+  height: 70px;
+  width: 350px;
+  top: 120px;
+  .a {
+    position: relative;
+    top: 22px;
+    color: black;
+  }
+  a {
+    position: relative;
+    top: 22px;
+    cursor: pointer;
+  }
+}
+
+.error {
+  position: absolute;
+  top: 310px;
+}

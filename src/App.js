@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
-import {StoryBoxSmall} from './components/Story_box';
-import {StoryBoxBig} from './components/Story_box';
+import { StoryBoxSmall } from './components/Story_box';
+import { StoryBoxBig } from './components/Story_box';
 import Header from './components/Header';
 import Post from './components/Post';
 import Story from './components/Story';
+import firestore from './firebase';
+import LogIn from './components/LogIn';
+import SignUp from './components/signUp';
 import './App.scss'
 import './App.css'
 import {
@@ -11,11 +14,15 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-import firestore from './firebase';
 
 export const web_data = React.createContext(null)
 
 const Mat = () => {
+  const name = localStorage.getItem("name");
+  useEffect(() => {
+    if (name === null && window.location.href.search('/account/logIn') === -1 && window.location.href.search('/account/signUp') === -1)
+      window.location.href = '/account/logIn'
+  }, [])
   const [posts, setPosts] = useState([]);
   const Story_code = () => {
     return (
@@ -50,7 +57,7 @@ const Mat = () => {
               <Header />
               <div className='main row col l8 offset-l2'>
                 <StoryBoxSmall />
-                {posts.map((cur, index) => <Post key={index} avatar={cur.pro} name={cur.name} image={cur.img} time={index} />)}
+                {posts.map((cur, index) => <Post key={index} avatar={cur.pro} name={cur.name} image={cur.img} time={cur.postedTime} />)}
                 <StoryBoxBig />
               </div>
             </div>
@@ -59,7 +66,11 @@ const Mat = () => {
         <Route path="/story/">
           {Story_code()}
         </Route>
-        <Route path="/log-in">
+        <Route path="/account/logIn">
+          <LogIn />
+        </Route>
+        <Route path="/account/signUp">
+          <SignUp />
         </Route>
       </Switch>
     </Router>

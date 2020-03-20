@@ -10,6 +10,9 @@ const Post = (nani) => {
     const avatar = nani.avatar;
     const name = nani.name;
     const image = nani.image;
+    const time = nani.time;
+    var today = new Date();
+    var date = '';
 
     useEffect(() => {
         setInstance(M.Carousel.init(carouselRef.current, {
@@ -42,6 +45,23 @@ const Post = (nani) => {
         )
     } else
         var slide = (<a className="img" href=""><img src={image} /></a>)
+
+    if (today.getFullYear() - Number(time[0]) === 0) {
+        if (today.getMonth() + 1 - Number(time[1]) === 0) {
+            if (today.getDate() - Number(time[2]) === 0) {
+                if (today.getHours() - Number(time[3]) === 0) {
+                    if (today.getMinutes() - Number(time[4]) === 0)
+                        date = 'few seconds ago';
+                    else
+                        date = (today.getMinutes() - Number(time[4])) + ' minutes ago'
+                } else
+                    date = (today.getHours() - Number(time[3])) + ' hours ago'
+            } else
+                date = (today.getDate() - Number(time[2])) + ' days ago'
+        } else
+            date = (today.getMonth() + 1 - Number(time[1])) + ' monts ago'
+    } else
+        date = (today.getFullYear() - Number(time[0])) + ' years ago'
 
     return (
         <div className='post col l6 offset-l2 s12 m10 offset-m1'>
@@ -83,7 +103,7 @@ const Post = (nani) => {
                         Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...
                     </h6>
                     <p className='date grey-text' id='date'>
-                        1 HOURS AGO
+                        {date}
                     </p>
                 </div>
                 <div className="card-action">

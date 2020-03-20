@@ -22,13 +22,14 @@ const StoryBoxSmall = () => {
 }
 
 const StoryBoxBig = () => {
+    const name = localStorage.getItem('name')
     return (
         <div className='row col l4 side hide-on-med-and-down fixed'>
             <nav className='z-depth-0'>
                 <div className="nav-wrapper white box">
                     <a className="brand-logo show-on-small left">
-                        <img className='circle profile' src='https://instagram.fuln2-1.fna.fbcdn.net/v/t51.2885-19/s150x150/76844870_2735946593133365_7586026101554544640_n.jpg?_nc_ht=instagram.fuln2-1.fna.fbcdn.net&_nc_ohc=AkHYh2kTbpUAX9EOlvH&oh=b55ee92cab6f1bcc74dd5f39a66a668b&oe=5EBDABCA'></img>
-                        <h6 className='black-text'>Soulforger</h6>
+                        <img className='circle profile' src='https://previews.123rf.com/images/urfandadashov/urfandadashov1808/urfandadashov180818343/108180118-user-vector-icon-isolated-on-transparent-background-user-logo-concept.jpg'></img>
+                        <h6 className='black-text'>{name}</h6>
                     </a>
                 </div>
                 <div className='story_box'>
