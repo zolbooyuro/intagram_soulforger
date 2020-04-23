@@ -10,8 +10,6 @@ const Story = (nani) => {
     let [instance, setInstance] = useState(null);
     const carouselRef = useRef(null);
     var ID = nani.ID;
-    ID = ID.split("/");
-    ID = ID[ID.length - 1];
 
     const [story_data, setStory_data] = useState({
         img: [''],

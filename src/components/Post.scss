@@ -1,76 +1,83 @@
 .carousel {
-    position: relative !important;
+  position: relative !important;
 }
 
 .indicator-item {
-    background-color: blue;
-    position: absolute;
+  background-color: blue;
+  position: absolute;
 }
-  
+
 .carousel .indicators .indicator-item.active {
-    background-color: #90caf9 !important;
+  background-color: #90caf9 !important;
 }
 
 svg.image {
-    height: 27px !important;
-    position: relative !important;
+  height: 27px !important;
+  position: relative !important;
 }
 
 .button {
-    padding: 16px 8px;
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    box-shadow: none;
-    background-position: -150px -319px;
-    height: 30px;
-    width: 30px;
-    background-image: url('https://www.instagram.com/static/bundles/es6/sprite_core_b20f2a3cd7e4.png/b20f2a3cd7e4.png');
+  padding: 16px 8px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  box-shadow: none;
+  background-position: -150px -319px;
+  height: 30px;
+  width: 30px;
+  background-image: url("https://www.instagram.com/static/bundles/es6/sprite_core_b20f2a3cd7e4.png/b20f2a3cd7e4.png");
 }
 
 .button_right {
-    right: 3px;
-    padding: 16px 8px;
-    position: absolute;
-    top: 50%;
-    box-shadow: none;
-    background-position: -182px -319px;
-    height: 30px;
-    width: 30px;
-    background-image: url('https://www.instagram.com/static/bundles/es6/sprite_core_b20f2a3cd7e4.png/b20f2a3cd7e4.png');
+  right: 3px;
+  padding: 16px 8px;
+  position: absolute;
+  top: 50%;
+  box-shadow: none;
+  background-position: -182px -319px;
+  height: 30px;
+  width: 30px;
+  background-image: url("https://www.instagram.com/static/bundles/es6/sprite_core_b20f2a3cd7e4.png/b20f2a3cd7e4.png");
 }
 
 .modal1 {
-    height: 301px !important;
-    width: 30%;
-    border-radius: 16px;
+  height: 301px !important;
+  width: 30%;
+  border-radius: 16px;
 }
 .modal2 {
-    display: flex;
-    height: 286px;
-    flex-direction: column;
-    padding: 0 !important;
-    .btn {
-        background-color: transparent;
-        height: 43px;
-        line-height: 43px;
-        color: black;
-        font-size: 13px;
-        box-shadow: none;
-        border-bottom: 1px solid #dbdbdb;
-    }
+  display: flex;
+  height: 286px;
+  flex-direction: column;
+  padding: 0 !important;
+  .btn {
+    background-color: transparent;
+    height: 43px;
+    line-height: 43px;
+    color: black;
+    font-size: 13px;
+    box-shadow: none;
+    border-bottom: 1px solid #dbdbdb;
+  }
 }
 
 .post nav .nav-wrapper .brand-logo h6 {
-    position: absolute;
-    left: 65px !important;
+  position: absolute;
+  left: 65px !important;
 }
 
 @media screen and (max-width: 1024px) {
-    .modal1 {
-        height: 301px !important;
-        width: 80% !important;
-        border-radius: 16px;
-    }
+  .modal1 {
+    height: 301px !important;
+    width: 80% !important;
+    border-radius: 16px;
+  }
+}
+.btn:hover {
+  box-shadow: none;
+}
+
+#comment {
+    padding-left: 10px;
 }

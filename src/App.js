@@ -7,6 +7,7 @@ import Story from './components/Story';
 import firestore from './firebase';
 import LogIn from './components/LogIn';
 import SignUp from './components/signUp';
+import Cube from './components/cube';
 import './App.scss'
 import './App.css'
 import {
@@ -27,7 +28,7 @@ const Mat = () => {
   const Story_code = () => {
     return (
       <div>
-        <Story ID={window.location.href} />
+        <Story ID={1} />
         <a className="btn exit_button" href='/'>
           <i className="material-icons" style={{ fontSize: "30px" }}>close</i>
         </a>
@@ -57,14 +58,14 @@ const Mat = () => {
               <Header />
               <div className='main row col l8 offset-l2'>
                 <StoryBoxSmall />
-                {posts.map((cur, index) => <Post key={index} avatar={cur.pro} name={cur.name} image={cur.img} time={cur.postedTime} />)}
+                {posts.map((cur, index) => <Post key={index} number={index} avatar={cur.pro} name={cur.name} image={cur.img} time={cur.postedTime} like={cur.liked}/>)}
                 <StoryBoxBig />
               </div>
             </div>
           </div >
         </Route>
         <Route path="/story/">
-          {Story_code()}
+          <Cube />
         </Route>
         <Route path="/account/logIn">
           <LogIn />

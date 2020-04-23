@@ -9,7 +9,7 @@ const StoryBoxSmall = () => {
                     <p className='black-text center'>BatMan</p>
                 </a>
                 <a href="/story/0" className="stories">
-                    <img className='circle profile' src='https://instagram.fuln2-1.fna.fbcdn.net/v/t51.2885-19/s150x150/76844870_2735946593133365_7586026101554544640_n.jpg?_nc_ht=instagram.fuln2-1.fna.fbcdn.net&_nc_ohc=AkHYh2kTbpUAX9EOlvH&oh=b55ee92cab6f1bcc74dd5f39a66a668b&oe=5EBDABCA'></img>
+                    <img className='circle profile' src='https://anikod.mn//img/ogimage.jpg'></img>
                     <p className='black-text center'>aniKod</p>
                 </a>
                 <a href="/story/0" className="stories">
@@ -39,7 +39,7 @@ const StoryBoxBig = () => {
                         <p className='black-text'>BatMan</p>
                     </a>
                     <a href="/story/1" className="stories">
-                        <img className='circle profile' src='https://instagram.fuln2-1.fna.fbcdn.net/v/t51.2885-19/s150x150/76844870_2735946593133365_7586026101554544640_n.jpg?_nc_ht=instagram.fuln2-1.fna.fbcdn.net&_nc_ohc=AkHYh2kTbpUAX9EOlvH&oh=b55ee92cab6f1bcc74dd5f39a66a668b&oe=5EBDABCA'></img>
+                        <img className='circle profile' src='https://anikod.mn//img/ogimage.jpg'></img>
                         <p className='black-text'>aniKod</p>
                     </a>
                     <a href="/story/2" className="stories">

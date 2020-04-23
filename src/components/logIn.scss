@@ -4,6 +4,10 @@
   height: 400px;
   width: 350px;
   top: 110px;
+  .btn:hover {
+    background-color: #3897f0 !important;
+    box-shadow: none;
+  }
 }
 
 .insta_image {
@@ -59,9 +63,6 @@ input:hover {
 .btn.disabled {
   background-color: rgba(56, 151, 240, 0.3) !important;
   color: white !important;
-}
-.btn:hover {
-  background-color: #3897f0 !important;
 }
 
 .Or {
