@@ -14,7 +14,7 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.3.0",
     "sass": "^1.25.1-test.1",
-    "three": "^0.115.0",
+    "three": "^0.125.0",
     "yarn": "^1.22.0"
   },
   "scripts": {
